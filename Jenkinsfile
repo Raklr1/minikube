@@ -20,7 +20,7 @@ pipeline {
                     //bat 'minikube image ls'
                     //bat 'kubectl get pods'
                     //bat 'minikube stop'
-                    bat 'minikube load image mysql:8.0.43'
+                    bat 'minikube image load mysql:8.0.43'
                     }
                     
                 

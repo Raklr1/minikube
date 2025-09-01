@@ -19,8 +19,8 @@ pipeline {
                     //bat 'minikube status'
                     //bat 'minikube image ls'
                     //bat 'kubectl get pods'
-                    //bat 'minikube stop'
-                    bat 'minikube image load mysql:8.0.43'
+                    bat 'minikube stop'
+                    //bat 'minikube image load mysql:8.0.43'
                     }
                     
                 

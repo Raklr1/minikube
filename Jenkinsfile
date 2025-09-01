@@ -16,7 +16,7 @@ pipeline {
                     bat 'minikube version'
                     //bat 'minikube update-context'
                     //bat 'echo %KUBECONFIG%'
-                    bat 'minikube status'
+                    bat '"C:/Program Files/Kubernetes/Minikube/minikube.exe" status'
                     //bat 'minikube image ls'
                     //bat 'kubectl get pods'
                     //bat 'minikube stop'

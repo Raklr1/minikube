@@ -26,7 +26,7 @@ pipeline {
                     }
                 script {
                     // 调用外部的 PowerShell 脚本文件
-                    powershell '1.ps1'
+                    powershell './1.ps1'
                 }
                     
                 

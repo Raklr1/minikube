@@ -14,15 +14,15 @@ pipeline {
                     
                     //bat 'minikube start'
                     //bat 'minikube version'
-                    bat 'minikube update-context'
+                    //bat 'minikube update-context'
                     //bat 'echo %KUBECONFIG%'
                     //bat 'minikube status'
                     //bat 'minikube image ls'
                     //bat 'kubectl get pods'
-                    bat 'minikube stop'
+                    //bat 'minikube stop'
                     //bat 'minikube image load mysql:8.0.43'
                     //bat 'minikube service mysql'
-                    bat 'minikube delete'
+                    //bat 'minikube delete'
                     }
                 script {
                     // 调用外部的 PowerShell 脚本文件

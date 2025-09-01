@@ -23,6 +23,7 @@ pipeline {
                     //bat 'minikube image load mysql:8.0.43'
                     //bat 'minikube service mysql'
                     //bat 'minikube delete'
+                    bat 'minikube image ls'
                     }
                 
                     

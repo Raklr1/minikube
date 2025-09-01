@@ -17,11 +17,12 @@ pipeline {
                     bat 'minikube update-context'
                     //bat 'echo %KUBECONFIG%'
                     //bat 'minikube status'
-                    bat 'minikube image ls'
-                    bat 'kubectl get pods'
-                    //bat 'minikube stop'
+                    //bat 'minikube image ls'
+                    //bat 'kubectl get pods'
+                    bat 'minikube stop'
                     //bat 'minikube image load mysql:8.0.43'
-                    bat 'minikube service mysql'
+                    //bat 'minikube service mysql'
+                    bat 'minikube delete'
                     //}
                     
                 

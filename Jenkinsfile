@@ -11,12 +11,13 @@ pipeline {
             steps {
                     withKubeConfig([credentialsId: 'k8s1']) {
                     
-                    bat 'echo PATH=%PATH%'
+                    //bat 'echo PATH=%PATH%'
                     //bat 'minikube start'
                     bat 'minikube version'
                     //bat 'minikube update-context'
                     //bat 'echo %KUBECONFIG%'
                     bat 'minikube status'
+                    bat 'docker image ls'
                     //bat 'minikube image ls'
                     //bat 'kubectl get pods'
                     //bat 'minikube stop'

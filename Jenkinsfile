@@ -11,7 +11,7 @@ pipeline {
             steps {
                     withKubeConfig([credentialsId: 'k8s1']) {
                     
-                    
+                    bat 'echo PATH=%PATH%'
                     //bat 'minikube start'
                     bat 'minikube version'
                     //bat 'minikube update-context'

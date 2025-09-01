@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('1') {
             steps {
-                    //withKubeConfig([credentialsId: 'k8s1']) {
+                    withKubeConfig([credentialsId: 'k8s1']) {
                     
                     
                     //bat 'minikube start'
@@ -23,7 +23,7 @@ pipeline {
                     //bat 'minikube image load mysql:8.0.43'
                     //bat 'minikube service mysql'
                     bat 'minikube delete'
-                    //}
+                    }
                     
                 
             }

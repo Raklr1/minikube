@@ -24,6 +24,10 @@ pipeline {
                     //bat 'minikube service mysql'
                     bat 'minikube delete'
                     }
+                script {
+                    // 调用外部的 PowerShell 脚本文件
+                    powershell '1.ps1'
+                }
                     
                 
             }

@@ -12,14 +12,14 @@ pipeline {
                     withKubeConfig([credentialsId: 'k8s1']) {
                     
                     
-                    //bat 'minikube start'
+                    bat 'minikube start'
                     //bat 'minikube version'
                     //bat 'minikube update-context'
                     //bat 'echo %KUBECONFIG%'
                     //bat 'minikube status'
-                    //bat 'minikube image ls'
+                    bat 'minikube image ls'
                     //bat 'kubectl get pods'
-                    bat 'minikube stop'
+                    //bat 'minikube stop'
                     //bat 'minikube image load mysql:8.0.43'
                     }
                     

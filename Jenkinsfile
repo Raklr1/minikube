@@ -9,6 +9,7 @@ pipeline {
         stage('导入数据') {
             steps {
                 withKubeConfig([credentialsId: 'k8s1']) {
+                    script {
                     try {
                         bat 'minikube image rm market-back:v2'
                     } catch (Exception e) {
@@ -18,6 +19,7 @@ pipeline {
                         bat 'docker image rm market-back:v2'
                     } catch (Exception e) {
                         echo 'docker无market-back:v2'
+                    }
                     }
                 }
             }

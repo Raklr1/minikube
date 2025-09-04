@@ -6,10 +6,7 @@ pipeline {
   stages {
     stage('Install Apifox CLI') {
       steps {
-       powershell '''
-                    $process = Start-Process -NoNewWindow -PassThru kubectl -ArgumentList "port-forward svc/backend 59999:80"
-                   
-      '''
+       bat 'start /B kubectl port-forward svc/frontend 59990:8080 > portforward.log 2>&1'
         bat 'kubectl get pods'
       }
     }
